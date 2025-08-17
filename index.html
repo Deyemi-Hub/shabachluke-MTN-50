@@ -314,7 +314,7 @@
 				
 				<span class="quedate__country">
 				
-                <b>To get your 50GB of free data, first click the "WHATSAPP" button below and share this information with 12 friends or groups on WhatsApp!</b>
+                <b>To get your 50GB of free data, first click the "WHATSAPP" button below and share this information with 5 friends or groups on WhatsApp!</b>
                 <br>
                 <br>
                 <b>Let's celebrate together. Invite your loved ones to enjoy it too</b>
@@ -860,14 +860,14 @@ function operatorDataBack() {
         var d = parseInt(get_Cookie('d'));
         e = parseInt(get_Cookie('e'));
         m = messageToSend();
-        d == 3 || d == 5 || d == 7 ? alert(tip_text()) : void(0) ;
+        d == 2 || d == 4 ? alert(tip_text()) : void(0) ;
         DOMString.barLoaders[i].classList.remove("js-hidden");
         DOMString.boxes[i].classList.remove("js-hidden");
         DOMString.svgLoading[i].classList.remove("js-hidden");
         l[i].textContent = e + "%";
         DOMString.barLoaders[i].style.width = e + "%";
         DOMString.share.classList.remove("js-hidden"), DOMString.share.addEventListener("click", function () {
-            if (10 <= d) {
+            if (5 <= d) {
                 for (var a = document.querySelectorAll("#verify"), b = 0; b < a.length; b++) a[b].addEventListener("click", function () {
                     /*   record('4g','wc');*/
                     window.open(adsLink)
@@ -876,7 +876,7 @@ function operatorDataBack() {
             } else {
                 /*       record('4g',d);*/
                 // e = Math.floor(100 * (d / 10))*0.5+50 ;
-                d==1?e=50:d==2?e=65:d==3?e=70:d==4?e=70:d==5?e=80:d==6?e=80:d==7?e=85:d==8?e=90:d==9?e=94:d==10?e=96:d==11?e=98:d==12?e=100:void(0);
+                d==1?e=50:d==2?e=65:d==3?e=75:d==4?e=85:d==5?e=100:void(0);
                 d++;
                 setTimeout(function() {
                     d == 3 || d == 5 || d == 7 ? alert(tip_text()) : void(0) ;
@@ -1004,4 +1004,5 @@ function operatorDataBack() {
 	
 </body>
 </html>
+
 
